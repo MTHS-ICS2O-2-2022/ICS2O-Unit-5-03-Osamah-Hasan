@@ -24,6 +24,23 @@
           <span class="mdl-layout-title">Get your movie</span>
         </div>
       </header>
+      <main class="mdl-layout__content">
+        <img src="./images/download (1).jpeg" alt="movie" />
+        <div class="page-content">What is your age</div>
+        <!-- Simple Textfield -->
+        <from action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input pattern="-?[0-9]*(\.[0-9]+)?" class="mdl-textfield__input" type="text" id="age" />
+            <label class="mdl-textfield__label" for="age">Age</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
+          onclick="video()">
+            Get my video
+          </button>
+          <answer id="answer"></answer>
+        </from>
+      </main>
     </div>
   </body>
 </html>
