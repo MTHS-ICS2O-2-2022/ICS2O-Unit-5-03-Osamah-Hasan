@@ -7,17 +7,25 @@
 "use strict"
 
 function video () {
+
   //input
   const age = parseInt(document.getElementById('age').value)
 
   //process
-  if (age >= 17 ) {
-    document.getElementById('answer').innerHTML = "You can watch an R rated movie alone."
-  } else if (age >= 13) {
-    this.document.getElementById('answer').innerHTML = "You can watch a PG-13 rated movie alone."
-  } else if (age >= 5) {
-    this.document.getElementById('answer').innerHTML = "You can watch a G or PG rated movie alone."
-  } else if (age < 5){
-    this.document.getElementById('answer').innerHTML = "Whoops! You are too young, you need to be 5 or older to watch a movie."
+  if (age >= 17) {
+    document.getElementById("answer").innerHTML =
+      "You can see G, PG and R rated movies!"
+  }
+  else if (age >= 13) {
+    document.getElementById("answer").innerHTML =
+    "You can see G and PG rated movies."
+  }
+  else if (age >= 5) {
+    document.getElementById("answer").innerHTML =
+    "You can only see G rated movies."
+  }
+  else {
+    document.getElementById("answer").innerHTML =
+    "You are too young to watch any movies."
   }
 }
